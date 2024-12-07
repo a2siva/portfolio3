@@ -53,10 +53,9 @@
         height: 500px;
         background: linear-gradient(purple, white);
       }
-      
-      #grad2 {
-        height: 500px;
-        background: linear-gradient(purple, white);
+
+      #about {
+        margin-bottom: 0px;
       }
 
       h1 {
@@ -69,6 +68,16 @@
         /* Correct font-family */
       }
 
+      .about-image {
+        width: 40%;
+        /* Adjust the image width */
+        height: auto;
+        /* Maintain aspect ratio */
+        border-radius: 10px;
+        /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Optional shadow for aesthetics */
+      }
 
       #portfolio-text {
         position: absolute;
@@ -90,9 +99,6 @@
         margin-bottom: 20px;
       }
 
-      #about {
-        margin-bottom: 0px;
-      }
 
       /* Work Section */
       #work {
@@ -140,14 +146,6 @@
       }
 
 
-      #goals {
-        margin-bottom: 0px;
-      }
-
-      #contact {
-        margin-bottom: 250px;
-      }
-
       .column {
         flex: 1;
         /* Flexible column width */
@@ -189,15 +187,8 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
 
-      .about-image {
-        width: 40%;
-        /* Adjust the image width */
-        height: auto;
-        /* Maintain aspect ratio */
-        border-radius: 10px;
-        /* Rounded corners */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        /* Optional shadow for aesthetics */
+      #goals {
+        margin-bottom: 0px;
       }
 
       /* Images Section */
@@ -248,22 +239,29 @@
         margin-bottom: 10px;
       }
 
-      /* Style only for the links in the contact section */
-      #contact .contact-link:link,
-      #contact .contact-link:visited {
-        background-color: white;
-        color: black;
-        border: 2px solid green;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
+
+      #contact {
+        margin-bottom: 250px;
       }
 
-      #contact .contact-link:hover,
-      #contact .contact-link:active {
-        background-color: green;
-        color: white;
+      #get-in-touch {
+        font-size: 50px;
+        /* Make the text large */
+        font-family: "DM Serif Display", serif;
+        /* Choose the same font or another one for consistency */
+        font-weight: bold;
+        color: black;
+        text-align: center;
+        /* Center align it */
+        margin-top: 20px;
+      }
+
+      .contact-gif {
+        width: 50%;
+        max-width: 300px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
       }
 
       @media screen and (max-width: 600px) {
@@ -371,13 +369,18 @@
     <!-- Contact Section -->
     <section id="contact" class="content-section">
       <h2>Contact</h2>
+      <h3 id="get-in-touch">Get in Touch</h3> <!-- Added "Get in Touch" heading -->
       <p>If you'd like to reach out, feel free to contact me through the following:</p>
 
       <!-- External Link -->
-      <p>Visit 2nd portfolio at <a href="https://sivaaswina.wixstudio.com/my-site-5" target="_blank">www.aswinasiva.com</a></p>
+      <p>Visit my 2nd portfolio at <a href="https://sivaaswina.wixstudio.com/my-site-5" target="_blank">www.aswinasiva.com</a></p>
 
       <!-- Email Link -->
       <p>Email me at <a href="mailto:a2sivalo@uwaterloo.ca">a2sivalo@uwaterloo.ca</a></p>
+
+      <!-- Added GIF Image -->
+      <img src="gif.png" alt="Contact GIF" class="contact-gif">
     </section>
+
   </body>
 </html>
