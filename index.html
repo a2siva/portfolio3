@@ -102,6 +102,7 @@
 
       /* Work Section */
       #work {
+        margin-bottom: 50px;
         padding: 20px;
       }
 
@@ -132,7 +133,7 @@
       /* Project Image */
       .project-image {
         width: 30%;
-        height: 500px;
+        height: auto;
         border-radius: 20px;
       }
 
@@ -264,6 +265,21 @@
         margin: 20px auto;
       }
 
+      table {
+  margin-top: 20px;
+  border:1px solid black;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
       @media screen and (max-width: 600px) {
         .column {
           max-width: 100%;
@@ -281,12 +297,13 @@
     </nav>
 
     <!-- Header with Background Image -->
-    <header>
-      <p id="intro-text">Hello, Welcome to...</p>
-      <h1>Aswina Sivaloganathan's</h1>
-      <div id="portfolio-text">
-        <p>Portfolio</p>
-      </div>
+    <header id="main-header">
+  <p id="intro-text">Hello, Welcome to...</p>
+  <h1>Aswina Sivaloganathan's</h1>
+  <div id="portfolio-text">
+    <p>Portfolio</p>
+  </div>
+
 
       <!-- Gradient Section -->
       <div id="grad1"></div>
@@ -342,9 +359,30 @@
 
         <img src="infographic (1).jpg" alt="Project Image 2" class="project-image">
       </div>
-    </section>
+      
+      <!-- Table -->
+  <h3>Additional Information</h3>
+  <table style="width:100%">
+    <tr>
+      <th>Work</th>
+      <th>Experience</th>
+      <th>Time</th>
+    </tr>
+    <tr>
+      <td>Head Of Marketing (Red Cross club)</td>
+      <td>As Head of Marketing in the Red Cross club, I organized campaigns and events to promote the club's initiatives, increase member engagement, and raise awareness about humanitarian causes.</td>
+      <td>1 year</td>
+    </tr>
+    <tr>
+      <td>Mind4Youth</td>
+      <td>In my Mind4Youth internship, I contributed to promoting youth mental health by creating engaging content for social media, assisting with campaign planning, and supporting initiatives aimed at raising awareness and providing resources for mental wellness.</td>
+      <td>3 Months</td>
+    </tr>
+  </table>
 
-
+  <p>Add more information or projects here.</p>
+</section>
+  
 
     <!-- Goals Section -->
     <section id="goals" class="content-section">
@@ -360,9 +398,9 @@
 
       <!-- Goals List -->
       <ul class="goals-list">
-        <li>Secure a co-op position at TD to gain hands-on experience in the corporate world.</li>
-        <li>Pursue a career as a UX Designer, combining creativity and user-centered design to craft impactful experiences.</li>
-        <li>Complete my master’s degree at the University of Toronto, furthering my knowledge and expertise in design and technology.</li>
+        <li>Secure a co-op position at <strong>TD</strong> to gain hands-on experience in the corporate world.</li>
+        <li>Pursue a career as a <strong>UX Designer</strong>, combining creativity and user-centered design to craft impactful experiences.</li>
+        <li>Complete my master’s degree at the <strong>University of Toronto</strong>, furthering my knowledge and expertise in design and technology.</li>
       </ul>
     </section>
 
