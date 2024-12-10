@@ -65,15 +65,16 @@
         font-size: 70px;
         margin: 0;
         font-family: "DM Serif Display", serif;
-        /* Correct font-family */
       }
-.sparkle {
-    width: 100px;
-    height: 100px;
-    position: absolute; 
-    left: 30px; 
-    top: 650px; 
-  }
+
+      .sparkle {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 30px;
+        top: 650px;
+      }
+
       .about-images {
         display: flex;
         justify-content: center;
@@ -94,14 +95,14 @@
         position: relative;
         right: 70px
       }
-      
+
       .side-image2 {
-  width: 150px;
-  height: auto;
-  position: relative;
-  top: -30px; /* Moves the image up */
-  left: 70px; /* Moves the image to the right */
-}
+        width: 150px;
+        height: auto;
+        position: relative;
+        top: -30px;
+        left: 70px;
+      }
 
       #portfolio-text {
         position: absolute;
@@ -130,27 +131,25 @@
         padding: 20px;
       }
 
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
       .work-image {
-        width: 300;
+        width: 300px;
         height: auto;
-        position: relative;
-        left: 200px;
+   
       }
- 
-      .logo {
-        width: 200px;
-        height: 200px;
-        position: relative;
-        top: -10px; 
-        left: 220px
-      }
+
+      .logo,
       .work-image2 {
-        width: 200px;
-        height: 200px;
-        position: relative;
-        top: -10px; 
-        right: 550px
+        width: 300px;
+        height: auto;
       }
+
       /* Work Description */
       .work-description {
         margin-top: 10px;
@@ -187,13 +186,13 @@
         border-collapse: collapse;
       }
 
-      th, td {
+      th,
+      td {
         text-align: left;
         padding: 8px;
         border: 1px solid black;
       }
 
-      
 
       .column {
         flex: 1;
@@ -205,6 +204,10 @@
         margin: 10px;
         transition: transform 0.3s ease;
 
+      }
+
+      #goals {
+        margin-bottom: 0px;
       }
 
       .column:hover {
@@ -229,38 +232,16 @@
         margin: 20px 0;
       }
 
-      .goal-images {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 15px;
-      }
-
-      .goal-image {
-        width: 30%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      #goals {
-        margin-bottom: 0px;
-      }
-
       /* Images Section */
       .goal-images {
         display: flex;
         justify-content: center;
         gap: 20px;
-        /* Space between images */
         margin-top: 20px;
         padding: 20px;
         background-color: #f9f9f9;
-        /* Light background for separation */
         border-radius: 10px;
-        /* Rounded corners for the section */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        /* Subtle shadow for depth */
       }
 
       /* Individual Image Styling */
@@ -268,16 +249,12 @@
         width: 30%;
         height: auto;
         border-radius: 10px;
-        /* Rounded corners for images */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        /* Optional shadow for aesthetics */
         transition: transform 0.3s ease;
-        /* Smooth zoom effect on hover */
       }
 
       .goal-image:hover {
         transform: scale(1.05);
-        /* Slight zoom on hover */
       }
 
       /* Goals List Styling */
@@ -285,7 +262,7 @@
         margin-top: 20px;
         font-size: 18px;
         color: #333;
-        text-align: left;
+        text-align: center;
         list-style-type: disc;
         padding: 0 20px;
         line-height: 1.8;
@@ -295,34 +272,29 @@
         margin-bottom: 10px;
       }
 
-
       #contact {
         margin-bottom: 0px;
       }
+  
+      #lets-design {
+        font-size: 100px;
+        font-family: "DM Serif Display", serif;
+        font-weight: bold;
+        color: black;
+        margin: 0;
+        text-align: center;
+      }
 
-    
-
-#lets-design {
-  font-size: 100px;
-  font-family: "DM Serif Display", serif;
-  font-weight: bold;
-  color: black;
-  margin: 0;
-  text-align: left;
-}
-
-#design {
-  font-size: 100px;
-  font-family: "DM Serif Display", serif;
-  font-weight: bold;
-  color: black;
-  margin: 0;
-  text-align: left;
-  position: relative;
-  top: -60px
-}
-
-
+      #design {
+        font-size: 100px;
+        font-family: "DM Serif Display", serif;
+        font-weight: bold;
+        color: black;
+        margin: 0;
+        text-align: center;
+        position: relative;
+        top: -60px
+      }
 
       .contact-gif {
         width: 50%;
@@ -368,8 +340,8 @@
       <img src="aswina2.JPG" alt="Aswina Image 2" class="side-image">
       <img src="IMG_2111 3.jpg" alt="About Image" class="about-image">
       <img src="aswina3.JPG" alt="Aswina Image 3" class="side-image2">
-    
-      
+
+
       <div class="row">
         <div class="column">
           <h2>Who I Am</h2>
@@ -399,42 +371,46 @@
     <section id="work" class="content-section">
       <h2>Work</h2>
       <p>Explore my projects and professional achievements.</p>
-      <img src="Baileys (1).jpg" alt="Baileys Project" class="work-image">
-      <img src="Untitled.png" alt="Baileys Logo" class="Logo">
-      <img src="Break Tradition (1).png" alt="Baileys CTA" class="work-image2">
-           
+      <div class="image-container">
+        <img src="work-image.jpg" class="work-image" alt="Work Image">
+        <img src="logo.jpg" class="logo" alt="Logo">
+        <img src="work-image2.jpg" class="work-image2" alt="Work Image 2">
+      </div>
+
+
       <!-- Text Below Image -->
       <p class="work-description">
         This is one of my main projects I completed recently, focusing on rebranding a renowned logo: <i>Baileys</i>. The project involved modernizing the design to align with contemporary trends while retaining the essence of the brand. I created a sleek logo redesign that features elegant cursive typography for a timeless feel. Additionally, I conceptualized fresh and innovative packaging ideas to appeal to a broader, modern audience. This project challenged my creativity and attention to detail, resulting in a cohesive and visually striking brand refresh.
       </p>
       <div class="project-gallery">
         <img src="subpage1 (1).jpg" alt="Project Image 1" class="project-image">
-       <img src="infographic (1).jpg" alt="Project Image 2" class="project-image">
+        <img src="infographic (1).jpg" alt="Project Image 2" class="project-image">
         <img src="FrontPage.jpg" alt="Project Image 2" class="project-image">
         <p class="project-description">
           These are some other design works I have done this semester. I worked on a website redesign project for a local bakery, aiming to modernize its online presence and improve user experience. The redesign focused on creating a visually appealing layout while ensuring easy navigation for customers.Additionally, I created an infographic analyzing my TikTok habits. This project allowed me to explore data visualization techniques and reflect on my digital consumption patterns. The infographic is both informative and visually engaging, showcasing my ability to merge design and storytelling effectively.
         </p>
 
-      <!-- Table -->
-      <h3>Additional Information</h3>
-      <table style="width:100%">
-        <tr>
-          <th>Work</th>
-          <th>Experience</th>
-          <th>Time</th>
-        </tr>
-        <tr>
-          <td>Head Of Marketing (Red Cross club)</td>
-          <td>As Head of Marketing in the Red Cross club, I organized campaigns and events to promote the club's initiatives, increase member engagement, and raise awareness about humanitarian causes.</td>
-          <td>1 year</td>
-        </tr>
-        <tr>
-          <td>Mind4Youth</td>
-          <td>In my Mind4Youth internship, I contributed to promoting youth mental health by creating engaging content for social media, assisting with campaign planning, and supporting initiatives aimed at raising awareness and providing resources for mental wellness.</td>
-          <td>3 Months</td>
-        </tr>
-      </table>
-    </section>
+        <!-- Table -->
+        <h3>Additional Information</h3>
+        <table style="width:100%">
+          <tr>
+            <th>Work</th>
+            <th>Experience</th>
+            <th>Time</th>
+          </tr>
+          <tr>
+            <td>Head Of Marketing (Red Cross club)</td>
+            <td>As Head of Marketing in the Red Cross club, I organized campaigns and events to promote the club's initiatives, increase member engagement, and raise awareness about humanitarian causes.</td>
+            <td>1 year</td>
+          </tr>
+          <tr>
+            <td>Mind4Youth</td>
+            <td>In my Mind4Youth internship, I contributed to promoting youth mental health by creating engaging content for social media, assisting with campaign planning, and supporting initiatives aimed at raising awareness and providing resources for mental wellness.</td>
+            <td>3 Months</td>
+          </tr>
+        </table>
+      </div>
+   </section>
 
 
     <!-- Goals Section -->
